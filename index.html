@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Formulário Bootcamp</title>
+</head>
+<body>
+    <div class="container"> <h1 class= titulo> Formulário </h1>
+    <p> <ul><li>Preencha o formulário</li></ul></p>
+    <input type="text" id="inputNome" placeholder="Digite o seu nome">
+    <select id="inputPosicao">
+        <option value="" disabled selected>Selecione a posição</option>
+        <option value="Pivô">Pivô</option>
+        <option value="Ala">Ala</option>
+        <option value="Fixo">Fixo</option>
+        <option value="Goleiro">Goleiro</option>    
+
+    </select>
+    <input type="date" id="inputDataNascimento" placeholder="Data de Nascimento">
+    <button onclick="adicionarNome()">Enviar</button>
+    <p id="mensagem"></p>
+    <ul id ="listaNomes"></ul>
+    </div>
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
